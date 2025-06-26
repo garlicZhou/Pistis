@@ -82,9 +82,9 @@ The trie supports:
 
 Implements the **STRP** Algorithm:
 
-1. **Padding** – Ensures data aligns with AES block size
-2. **Encrypting** – Uses AES-256 CBC encryption with a random IV
-3. **Permuting** – Randomly shuffles node orders to obfuscate access pattern
+1. **Padding** 
+2. **Encrypting** 
+3. **Permuting** 
 
 ---
 
@@ -93,7 +93,6 @@ Implements the **STRP** Algorithm:
 - Simulates **secret sharing** of RDF query answers
 - Demonstrates verifiable computation with reconstruction
 
----
 
 ---
 
