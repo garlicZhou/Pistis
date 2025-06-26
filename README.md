@@ -64,7 +64,7 @@ go mod tidy
 ### 3. Run the project
 
 ```bash
-go run trie_test.go emst_test.go vo_sparql_test.go
+go run xx.go
 ```
 
 ---
