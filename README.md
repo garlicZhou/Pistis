@@ -19,7 +19,7 @@ It consists of three main components:
 .
 ├── trie.go         # Implements the Merkle Trie for RDF data
 ├── emst.go         # Encrypted Merkle Trie with STRP: Padding, Encrypting, Permuting
-├── vo_sparql.go    # Secure SPARQL verification using MPC (ABY simulated)
+├── vo_sparql.go    # Secure SPARQL verification using MPC 
 ├── go.mod          # Go module definition
 ├── README.md       # This file
 ```
