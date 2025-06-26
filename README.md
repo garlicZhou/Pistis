@@ -1,7 +1,7 @@
 
 # Pistis: Encrypted Merkle Trie and Secure SPARQL Verification
 
-This project is an implementation of the system described in the paper:
+This project is a demonstration implementation that includes only the core components of the system described in the paper:
 
 **"Pistis: A Decentralized Knowledge Graph Platform Enabling Ownership-Preserving SPARQL Querying" (VLDB 2025)**
 
