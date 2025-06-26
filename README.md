@@ -20,7 +20,6 @@ It consists of three main components:
 ├── trie.go         # Implements the Merkle Trie for RDF data
 ├── emst.go         # Encrypted Merkle Trie with STRP: Padding, Encrypting, Permuting
 ├── vo_sparql.go    # Secure SPARQL verification using MPC (ABY simulated)
-├── main.go         # Entry point: builds trie, encrypts, verifies a sample query
 ├── go.mod          # Go module definition
 ├── README.md       # This file
 ```
@@ -29,7 +28,7 @@ It consists of three main components:
 
 ## 🧱 Requirements
 
-- Go 1.20+
+- Go 1.17+
 - LevelDB (for trie persistence)
 - [ABY Framework](https://encrypto.de/code/ABY) (if using real MPC, optional)
 - Unix-like OS (recommended for subprocess execution)
@@ -65,7 +64,7 @@ go mod tidy
 ### 3. Run the project
 
 ```bash
-go run main.go trie.go emst.go vo_sparql.go
+go run trie_test.go emst_test.go vo_sparql_test.go
 ```
 
 ---
@@ -92,19 +91,9 @@ Implements the **STRP** Algorithm:
 ## 🔎 Secure VO-SPARQL (vo_sparql.go)
 
 - Simulates **secret sharing** of RDF query answers
-- Includes dummy **MPC execution** via subprocess call to `./aby_mpc`
 - Demonstrates verifiable computation with reconstruction
 
 ---
-
-## 🧪 Sample Output
-
-```
-Search for 'apple': true
-Search for 'banana': false
-Running secure SPARQL query: SELECT * WHERE { ?s ?p ?o }
-Query result (simulated secure computation): 42
-```
 
 ---
 
