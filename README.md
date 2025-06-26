@@ -50,7 +50,7 @@ brew install go leveldb
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-org/pistis
+git clone https://github.com/garlicZhou/pistis
 cd pistis
 ```
 
